@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Погода в разных странах</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌍 Погода в мире</h1>
+            <p>Проверьте погоду в любой стране</p>
+        </header>
+
+        <div class="search-section">
+            <input 
+                type="text" 
+                id="cityInput" 
+                placeholder="Введите название города или страны..." 
+                class="search-input"
+            >
+            <button id="searchBtn" class="search-btn">🔍 Поиск</button>
+        </div>
+
+        <div class="quick-countries">
+            <h3>Популярные страны</h3>
+            <div class="country-buttons">
+                <button class="quick-btn" data-country="Russia">🇷🇺 Россия</button>
+                <button class="quick-btn" data-country="USA">🇺🇸 США</button>
+                <button class="quick-btn" data-country="China">🇨🇳 Китай</button>
+                <button class="quick-btn" data-country="Japan">🇯🇵 Япония</button>
+                <button class="quick-btn" data-country="Germany">🇩🇪 Германия</button>
+                <button class="quick-btn" data-country="France">🇫🇷 Франция</button>
+                <button class="quick-btn" data-country="Canada">🇨🇦 Канада</button>
+                <button class="quick-btn" data-country="Australia">🇦🇺 Австралия</button>
+            </div>
+        </div>
+
+        <div id="weatherContainer" class="weather-container">
+            <!-- Карточки погоды будут добавлены здесь -->
+        </div>
+
+        <div id="errorMessage" class="error-message"></div>
+
+        <footer>
+            <p>Погода обновляется в реальном времени</p>
+        </footer>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
